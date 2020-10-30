@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#0B759D">
+<!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#0B759D">
+<!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#0B759D">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"/>
+</head>
+
+<body class="doDark">
+    <header class='doDark'>
+        <div class="logo"> <a href="/"> <span>#</span>Qiuz</a></div>
+        
+        <div onclick="activeDarkMode()" class="dark-mode">
+            <div id="icon-mode" class="icon-mode"></div>
+        </div>
+        
+    </header>
+    
+    <div id="results" class="card2">
+         <div class="image">
+            <div class="emoji">
+               <img src="/iconfinder_smiley__11_2290990.png">
+            </div>
+            <div class="shadow"></div>
+         </div>
+         <div class="container doDark">
+            <h1>Congratulations</h1>
+            <p>Your result is: </p> <p id="res"></p>
+            <h6>Hooray!</h6>
+         </div>
+     
+  </div>
+  
+   <div id="results2" class="card2">
+         <div class="image">
+            <div class="emoji">
+               <img src="/iconfinder_smiley__22_2290995.png">
+            </div>
+            <div class="shadow"></div>
+         </div>
+         <div class="container doDark">
+            <h1 class="e1">Uh oh</h1>
+            <p>Your result is:</p> <p id="res2"></p>
+            <p>Why are you so stupid </p>
+            <h6 class="e2">Okeh..</h6>
+         </div>
+     
+  </div>
+    
+    
+    <div  class="container1 doDark" >
+     
+      
+      <div class="card">
+          
+            <div id="Q1" class='doDark'>LOADING...</div>
+            
+            <div id="answers" class='doDark'>
+                <button id="answer1" onclick="qAnswer(1)"></button>
+                <button id="answer2" onclick="qAnswer(2)"></button>
+                <button id="answer3" onclick="qAnswer(3)"></button>
+            </div>
+            
+        </div>
+        
+        
+            
+        </div>
+      
+        <div class="info">
+            
+            <div class="card doDark" id="information">
+                <i class="far fa-question-circle"></i> 
+                <h1> information</h1>
+                <div id="rule1">
+                    <p> • For every TRUE answer you will get 1 point, but if you choose the Wrong answer you will lose 1 point.</p>
+                <br> <p>• This quiz made using: </p>
+                <ol class="list-lang">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JAVASCRIPT</li>
+                </ol>
+                <h4>Have fun!</h4>
+                </div>
+            </div>
+        </div>
+      
+    
+   
+    
+  <script src="main.js"></script>
+</body>
+</html>

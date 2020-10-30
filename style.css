@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+
+body {
+    background: #eee
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: 500;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 55px;
+    background: #0B759D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.5px solid #eee;
+}
+
+header > .logo > a {
+    text-transform: uppercase;
+    margin-left: 16px;
+    font-size: 26px;
+    font-weight: 500;
+    color: #eee;
+    cursor: pointer;
+    user-select: none;
+    text-decoration: none;
+}
+
+header > .logo > a > span {
+    color: #9CEE8C;
+    font-weight: 900;
+}
+
+.dark-mode {
+    width: 60px;
+    height: 30px;
+    background: white;
+    margin-right: 25px;
+    border-radius: 60px;
+    padding: 1px;
+}
+.dark-mode > .icon-mode {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid #42445A;
+    transition: 1s ease;
+    background-image: url(/iconfinder_sun_light_mode_day_5402428.png);
+    background-size: cover;
+}
+.do-dark-mode {
+    background-image: url(/iconfinder_moon_dark_mode_night_5402400.png) !important;
+    background-size: cover;
+    margin-left: 30px;
+}
+
+.dark {
+    background: black !important;
+    color: #eee !important;
+    transition: 0.5s ease;
+
+}
+
+.container1 {
+  background: #eee;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  width: 90%;
+  height: 300px;
+  margin-top: 4em; 
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 1;
+  box-shadow: 0.5px 2px 6px #eee;
+
+}
+
+#Q1 {
+  width: 100%;
+  height: 40%;
+  text-align: center;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+#answers {
+    width: 100%;
+    height: 60%;
+    background: #0B759D;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    transform: translateY(-180px);
+    animation: animateCard 0.7s ease-in-out 1;
+    animation-fill-mode: both;
+
+}
+
+@keyframes animateCard {
+    from {
+
+    } to {
+        transform: translateY(0)
+    }
+}
+
+
+#answers > button {
+    border: 0;
+    background: white;
+    width: 95%;
+    margin: 6px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media screen and (min-width: 500px){
+    .card {
+        width: 40%
+    }
+} 
+
+
+/* card congrats */
+
+.card2 > .image > .emoji > img{
+   width: 100px;
+   
+}
+.card2{
+   position: absolute;
+   width: 250px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 300px;
+   z-index: 100;
+   left: 37%;
+   right: 40%;
+   top: 7em;
+   visibility: hidden;
+   font-weight: 400;
+}
+
+@media screen and (max-width: 500px) {
+    .card2 {
+        left: 15%;
+    }
+}
+
+.container{
+   background: white;
+   width: 220px;
+   height: 350px;
+   border-radius: 45px;
+   padding: 20px;
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   box-shadow: 1px 1px 5px #BEBEBE;;
+}
+
+.image{
+   margin-bottom: -5em;
+   z-index: 1;
+}
+.emoji {
+   position: relative;
+   z-index: 2;
+}
+.shadow{
+   background: #000000;
+   width: 90px;
+   height: 90px;
+   margin-top: -4.4em;
+   border-radius: 50%;
+   margin-left: -0.4em;
+   opacity: 0.1;
+   position: relative;
+}
+.container h1{
+   margin-top: 4em;
+   font-size:20px;
+   color: #3ECD71;
+   font-family: 'Josefin Sans', sans-serif;
+   font-weight: 700px;
+   
+}
+.container p{
+   font-family: 'Josefin Sans', sans-serif;
+   margin-top: 0.5em;
+   font-size: 17px;
+   width: 130px;
+   text-align: center;
+   
+}
+.container h6{
+   font-size: 18px;
+   margin-top: 1.5em;
+   background: #3ECD71;
+   color: #fff;
+   padding: 13px 1.7em 13px 1.7em;
+   border-radius: 20px;
+   font-family: 'Josefin Sans', sans-serif;
+}
+
+.e2{
+    background: #FF3A3A !important;
+}
+.e1{
+    color: #FF3A3A !important;
+}
+
+
+/* info */ 
+
+.info {
+    display: flex;
+    justify-content: center;
+    height: 30em;
+    
+}
+
+#information {
+    padding: 15px;
+    background: white;
+    
+}
+
+#information > h1 {
+    font-size: 18px;
+    margin-top: 13px;
+    margin-left: 2.5em;
+    text-transform: uppercase;
+}
+
+i {
+    float: left;
+    font-size: 38px;
+    color: #9CEE8C;
+}
+
+#rule1 {
+    margin-top: 1.5em
+}
+
+.list-lang {
+    margin-left: 2.5em;
+    margin-top: 20px
+}
+
+h4 {
+    color: #00ACFF;
+    float: right;
+    margin-top: 3em
+}
