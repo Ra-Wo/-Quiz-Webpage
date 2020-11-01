@@ -53,11 +53,11 @@ header > .logo > a > span {
     border-radius: 50%;
     border: 2px solid #42445A;
     transition: 1s ease;
-    background-image: url(/iconfinder_sun_light_mode_day_5402428.png);
+    background-image: url(https://raw.githubusercontent.com/Ra-Wo/-Quiz-Webpage/main/iconfinder_sun_light_mode_day_5402428.png);
     background-size: cover;
 }
 .do-dark-mode {
-    background-image: url(/iconfinder_moon_dark_mode_night_5402400.png) !important;
+    background-image: url(https://raw.githubusercontent.com/Ra-Wo/-Quiz-Webpage/main/iconfinder_moon_dark_mode_night_5402400.png) !important;
     background-size: cover;
     margin-left: 30px;
 }
